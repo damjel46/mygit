@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device - width, initial - scale = 1.0">
+    <title>연습문제</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="#" method="post">
+        <label for="username">고객명:</label>
+        <input type="text" id="username" name="username" required>
+        <label for="address">전화번호:</label>
+        <input type="text" id="address" name="address" required>
+        <label for="email">E-mail:</label> 
+        <input type="text" id="email" name="email" required>
+        <label for="selection">피자선택:</label>
+        <select name="pizza" id="pizza" class="pizza">
+            <option value="basic">피자를 선택하시오</option>
+            <option value="BULGOGI">불고기피자</option>
+            <option value="CHICKEN">치킨피자</option>
+            <option value="PINEAPPLE">하와이안피자</option>
+        </select>
+
+        <fieldset class="pizza_select">
+            <legend>피자 사이즈</legend>
+            <div>
+                <input type="radio" id="small" name="size" value="small">
+                <label for="small">Small</label>
+            </div>
+            <div>
+                <input type="radio" id="medium" name="size" value="medium">
+                <label for="small">Medium</label>
+            </div>
+            <div style="margin-bottom:23px">
+                <input type="radio" id="Large" name="size" value="Large">
+                <label for="small">Large</label>
+            </div>
+        </fieldset>
+
+        <fieldset class="pizza_select" style="margin-top: -1px; ">
+            <legend>토핑 선택</legend>
+            
+            <label class="radio-label">
+                <input type="checkbox" name="topping" value="bacon" class="custom-radio">
+                <span class="radio-btn"></span>베이컨
+            </label>
+            <label class="radio-label">
+                <input type="checkbox" name="topping" value="cheese" class="custom-radio">
+                <span class="radio-btn"></span>치즈
+            </label>
+            <label class="radio-label">
+                <input type="checkbox" name="topping" value="onion" class="custom-radio">
+                <span class="radio-btn"></span>양파
+            </label>
+            <label class="radio-label">
+                <input type="checkbox" name="topping" value="mushroom" class="custom-radio">
+                <span class="radio-btn"></span>버섯
+            </label>
+
+        </fieldset>
+
+        <label for="time">희망배송시간</label>
+        <input type="time" name="time" id="time">
+        <br><br>
+
+        <label for="request">배송희망사항:</label>
+        <textarea name="request" id="request" rows="4" cols="20"></textarea>
+
+        <button style="margin-top:15px"> <a href="https://www.oxts.com/ko/your-message-has-been-sent/">전송</a></button>
+    </form>
+    
+</body>
+
+</html>
