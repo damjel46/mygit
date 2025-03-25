@@ -1,34 +1,50 @@
-/* 기본적으로 메뉴 숨기기 */
-.nav-menu {
-    display: none;
-    list-style: none;
-    padding: 0;
+/* 전체 스타일 */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* 네비게이션 바 스타일 */
+  nav {
     background-color: #333;
-    position: absolute;
-    top: 50px;
-    left: 0;
-    width: 100%;
-}
-
-.nav-menu li {
-    padding: 10px;
-    text-align: center;
-}
-
-.nav-menu li a {
     color: white;
-    text-decoration: none;
-}
-
-/* 버튼을 눌렀을 때 나타나게 하기 */
-.nav-menu.active {
-    display: block;
-}
-
-.hamburger {
+    padding: 10px;
+    position: relative;
+  }
+  
+  /* 햄버거 버튼 스타일 */
+  .hamburger {
     font-size: 24px;
     background: none;
     border: none;
-    cursor: pointer;
     color: white;
-}
+    cursor: pointer;
+  }
+  
+  /* 메뉴 스타일 (기본적으로 숨김) */
+  .nav-menu {
+    list-style: none;
+    padding: 0;
+    margin-top: 0px;
+    background-color: #444;
+    max-height:0;
+    opacity:0;
+    overflow: hidden;
+    transition:all 0.3s ease, max-height 0.3s ease;
+  }
+  
+  .nav-menu li {
+    padding: 15px;
+  }
+  
+  .nav-menu li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* 메뉴 활성화 시 보이게 하기 */
+  .nav-menu.active {
+    opacity:1;
+    max-height:300px;
+  }
+  
