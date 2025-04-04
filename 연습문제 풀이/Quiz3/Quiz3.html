@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device-width, initial - scale = 1.0">
+        <title>Quiz3 풀이</title>
+    </head>
+    <body>
+        <h1 style="font-size: 35px;">회원가입</h1>
+        <form action="post">
+            <fieldset style="border: 1px solid black;">
+                <legend>필수입력사항</legend>
+                <table>
+                    <tr>
+                        <th>ID</th>
+                        <td><input type="text" id="id" name="id" placeholder="아이디 10글자 이내"> <button>중복 확인</button></td>
+                    </tr>
+                    <tr>
+                        <th>비밀번호</th>
+                        <td><input type="password" id="password" name="password" placeholder="영문, 숫자, 특수문자 포함 8자 이상" size="30"></td>
+                    </tr>
+                    <tr>
+                        <th>비밀번호 확인</th>
+                        <td><input type="password" id="password" name="password" size="30"></td>
+                    </tr>
+                    <tr>
+                        <th>Email</th>
+                        <td><input type="email" id="email" name="email"> 
+                            <select name="email" id="email_option">
+                                <option value="default">직접입력</option>
+                                <option value="naver">naver.com</option>
+                                <option value="nate">nate.com</option>
+                                <option value="gmail">gmail.com</option>
+                            </select>
+                        </td>
+                        </tr>
+                </table>
+            </fieldset>
+            <fieldset style="border: 1px solid black;">
+                <legend>추가 정보</legend>
+                <label for="profile">프로필 사진</label>
+                <input type="file">
+                <br><br>
+                <label for="sex">성별 : </label>
+                <input type="radio" name="gender" value="M" checked>남자
+                <input type="radio" name="gender" value="W">여자
+                <br><br>
+                <label for="birth">생년월일 : </label>
+                <input type="date" name="date">
+                <br><br>
+                <label for="hobby">취미</label><br>
+                <input type="checkbox" name="hobby" value="1">뜨개질 
+                <input type="checkbox" name="hobby" value="2">게임
+                <input type="checkbox" name="hobby" value="3">영화 <br> 
+                <input type="checkbox" name="hobby" value="4" checked>보석십자수
+                <input type="checkbox" name="hobby" value="5">음악감상<br> 
+                <input type="checkbox" name="hobby" value="0">기타
+                <input type="text" name="hobby0">
+                <br><br>
+                <label for="introduce">자기소개</label><br>
+                <textarea name="introduce" id="introduce" cols="80" rows="8" style="resize:none"></textarea>
+            </fieldset>
+            <br>
+            <button style="margin-left: 20px;">회원가입</button>
+            <button>다시입력</button>
+            <button>이전으로</button>
+        </form>
+    </body>
+</html>

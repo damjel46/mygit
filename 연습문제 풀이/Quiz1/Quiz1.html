@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device - width, initial - scale = 1.0">
+        <title>연습문제 1</title>
+    </head>
+    <body>
+        <form>
+            <label for="customerName">고객명 :</label>
+            <input type="text" id="customerName" name="customerName">
+            <br><br>
+            <label for="phone">전화번호 :</label>
+            <input type="tel" id="phone" name="phone">
+            <br><br>
+            <label for="email">E-mail :</label>
+            <input type="email" id="email" name="email">
+            <br><br>
+            <label for="pizza">피자선택 : </label>
+            <select name="pizza" id="pizza">
+                <option value="default">피자를 선택하세요</option>
+                <option value="1">불고기피자</option>
+                <option value="2">모짜렐라</option>
+                <option value="3">하이머딩거</option>
+            </select>
+            <br>
+            <fieldset>
+                <legend>피자사이즈</legend>
+                <input type="radio" id="small" name="small">Small <br><br>
+                <input type="radio" id="medium" name="medium">medium <br><br>
+                <input type="radio" id="Large" name="Large">Large <br><br>
+            </fieldset>
+            <fieldset>
+                <legend>토핑 선택</legend>
+                <input type="checkbox" id="topping" name="bacon">베이컨<br><br>
+                <input type="checkbox" id="topping" name="bacon">베이컨<br><br>
+                <input type="checkbox" id="topping" name="bacon">베이컨<br><br>
+                <input type="checkbox" id="topping" name="bacon">베이컨<br><br>
+            </fieldset>
+            <label for="deliver">희망배송시간 : </label>
+            <input type="time"><br><br>
+            <label for="required">배송시 요청사항 : </label> 
+            <textarea name="request" id="request" rows="4" cols="20"></textarea>
+            
+        </form>
+    </body>
+</html>
